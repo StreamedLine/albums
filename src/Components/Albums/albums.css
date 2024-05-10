@@ -1,0 +1,29 @@
+.albumsWrapper {
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    padding: 5px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.albumWrapper {
+    border: 3px solid #ccc;
+    padding: 5px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.albumImage {
+    margin: 10px auto;
+    align-self: center;
+    width: 100px;
+}
+
+.albumFooter {
+    margin-top: auto;
+    font-size: 14px;
+    color: #999;
+}

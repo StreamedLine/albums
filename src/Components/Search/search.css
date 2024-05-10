@@ -1,0 +1,15 @@
+.searchWrapper {
+    display: flex;
+    align-items: center;
+    height: 20px;
+    margin-bottom: 40px;
+}
+.searchWrapper .searchInput{
+    font-size: 18px;
+    width: 300px;
+    height: 100%;
+}
+.searchWrapper .searchButton {
+    height: 100%;
+    padding: 3px;
+}

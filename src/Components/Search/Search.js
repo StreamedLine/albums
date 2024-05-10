@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./search.css";
 
 export const Search = ({setArtistName}) => {
     const [term, setTerm] = useState("");
@@ -8,9 +9,10 @@ export const Search = ({setArtistName}) => {
         setArtistName(term)
     }
 
-    return <>
+    return <div className="searchWrapper">
         <form onSubmit={onSearchFormSubmit}>
-            <input onChange={e => setTerm(e.currentTarget.value)}/> <button type="submit">Search</button>
+            <input onChange={e => setTerm(e.currentTarget.value)} className="searchInput" /> 
+            <input type="submit" value="Search" className="searchButton" />
         </form>
-    </>
+    </div>
 }
