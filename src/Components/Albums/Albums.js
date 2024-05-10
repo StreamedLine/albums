@@ -11,7 +11,7 @@ export const Albums = ({artistName}) => {
         
         <div className="albumsWrapper"> 
             {albums.results.map(album => 
-                <div className="albumWrapper">
+                <div className="albumWrapper" key={album.collectionId}>
                     <h3>{album.collectionName}</h3>
 
                     <img src={album.artworkUrl100} className="albumImage"/>
